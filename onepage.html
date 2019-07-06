@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>javascript: calculate two numbers</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+
+
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="card-title mb-3">Pill Reminder</div>
+                       
+                                    <div class="col-md-12">
+                                    <h4 class="text-center">please fill in your pill reminder details and proceed to make payment </h4>
+                                </div>
+                                <div class="col-md-6 form-group mb-3">
+                                        <label for="picker2">Dosage (e.g 2)</label>
+                                        <input name="dose" class="form-control" type="text"  required id="">
+                                    </div>
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label for="picker2">Reminder Times Period</label>
+                                        <select class="form-control" name="reminder_times" id="n1">
+                                            <option value="Once Daily">Once Daily</option>
+                                            <option value="Twice Daily">Twice Daily</option>
+                                            <option value="3 Times Daily">3 Times Daily</option>
+                                            <option value="4 Times Daily">4 Times Daily</option>
+                                            <option value="5 Times Daily">5 Times Daily</option>
+                                            <option value="6 Times Daily">6 Times Daily</option>
+                                            <option value="7 Times Daily">7 Times Daily </option>
+                                            <option value="8 Times Daily">8 Times Daily</option>
+                                            <option value="9 Times Daily">9 Times Daily</option>
+                                            <option value="10 Times Daily">10 Times Daily</option>
+                                            <option value="11 Times Daily">11 Times Daily </option>
+                                            <option value="12 Times Daily">12 Times Daily</option>
+                                            
+                                        </select>
+                                    </div>
+                             
+                                
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label for="picker2">Start date</label>
+                                        <input name="date_start" class="form-control" id="" type="date"  placeholder="yyyy-mm-dd" required="">
+                                    </div>
+
+
+                                     <div class="col-md-6 form-group mb-3">
+                                        <label for="picker2">End date</label>
+                                        <input name="date_end" class="form-control" id="" type="date" placeholder="yyyy-mm-dd" required="">
+                                    </div>
+
+
+                                    <div class="col-md-6 form-group mb-3">
+                                <label for="picker1">Payment Method</label>                                  
+                                        <select class="form-control" name="payment_method">
+                                            <option value="BANK TRANSFER">BANK TRANSFER</option>
+                                            <option value="POS">POS</option>
+                                            <option value="email">CASH</option>
+                                        </select>
+                                </div>
+                                <div class="col-md-6 form-group mb-3">
+                                <label for="picker1">Reminder Method</label>                                  
+                                        <select class="form-control" name="reminder_method" id="n2">
+                                            <option value="SMS">SMS </option>
+                                            <option value="EMAIL">E-MAIL</option>
+                                            <option value="PHONE">Phone Call</option>
+                                        </select>
+                                </div>
+
+                                    <div class="col-md-12">
+                                    <h4 class="text-center">Expiration Date (Optional)</h4>
+                                </div>
+                                <div class="col-md-6 form-group mb-3">
+                                        <label for="picker2">Expiration Date</label>
+                                        <input name="expiration_date" class="form-control" id="expiration_date" type="date" placeholder="yyyy-mm-dd" >
+                                    </div>
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label for="picker2">Expiration Reminder <code> Expiration Reminder has service fee</code></label>
+                                        <select class="form-control" name="expiration_reminder">
+                                            <option value="NO">NO </option>
+                                            <option value="YES">YES</option>
+                                        
+                                          
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label for="picker2">SubTotal</label>
+                                        <input name="amount" class="form-control" id="amount" type="text"  disabled>
+                                    </div>
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label for="picker2">Total</label>
+                                        <input name="amount" class="form-control" id="result" type="text"  disabled>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <button class="btn btn-success" onclick="calc();">Calculate</button>
+                                        <button  class="btn btn-primary btn-sm"><a href="#" data-toggle="modal" data-target="#paywithcard">
+                            <font color="white">CARD PAYMENT</font></a></button>
+                                      
+                                        <button  class="btn btn-primary btn-sm"><a href="#" data-toggle="modal" data-target="#paywithwallet">
+                            <font color="white">WALLET PAYMENT</font></a></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+       </body>
+</html>
